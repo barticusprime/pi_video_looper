@@ -27,7 +27,7 @@ class DirectoryReader(object):
 
     def idle_message(self):
         """Return a message to display when idle and no files are found."""
-        return 'No files found in {0}'.format(self._path)
+        return 'Awaiting Setup...'
 
 
 def create_file_reader(config):

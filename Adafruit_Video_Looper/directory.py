@@ -25,9 +25,21 @@ class DirectoryReader(object):
         # not resource intensive.
         return False
 
+    def get_ip():
+        import socket
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        try:
+            s.connect(('10.255.255.255',1))
+            IP =  s.getsockname()[0]
+        except:
+            IP = 'No Network Detected'
+        finally:
+            s.close()
+        return IP
+
     def idle_message(self):
         """Return a message to display when idle and no files are found."""
-        return 'Awaiting Setup...'
+        return 'Awaiting Setup - IP: ' + get_ip()
 
 
 def create_file_reader(config):

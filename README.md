@@ -26,3 +26,9 @@ Now run the disable script by executing:
 `sudo ./disable.sh`
 
 Don't worry if you see an error message displayed that video looper is already stopped (this might happen if video looper isn't running when its disabled).  After running the script above video looper will be disabled and should not run on boot.
+
+To disable lightning bolt error
+
+`avoid_warnings=1`
+
+to your /boot/config.txt

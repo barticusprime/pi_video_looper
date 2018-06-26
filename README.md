@@ -5,7 +5,7 @@ Run these commands
 
 ```
 sudo apt-get install git
-git clone https://github.com/ADNewsom09/pi_video_looper.git
+git clone https://github.com/Archrival-LNK/pi_video_looper.git
 ```
 
 wait for the install to complete
